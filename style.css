@@ -85,8 +85,9 @@ Nav Bar
 }
 
 .navbar-light .navbar-toggler {
-	background: var(--clr-secondary-pink);
-	background-color: transparent;
+	/* background: var(--clr-secondary-pink); */
+	/* background-color: transparent; */
+	border-color: var(--clr-secondary-pink);
 }
 
 /* .menu-btn {
@@ -102,12 +103,22 @@ Landing Page
 			rgba(26, 36, 86, 0.45),
 			rgba(26, 36, 86, 0.85)
 		) */
-	background: linear-gradient(
+	/* background: linear-gradient(
 			to right,
 			rgba(218, 218, 218, 0.712),
 			rgba(221, 221, 221, 0.952)
+		), */
+	/* background: linear-gradient(
+			to bottom,
+			rgba(239, 194, 179, 0.966),
+			rgba(26, 36, 86, 0.205)
+		), */
+	background: linear-gradient(
+			164deg,
+			rgba(239, 194, 179, 1) 0%,
+			rgba(26, 36, 86, 0.05926120448179273) 95%
 		),
-		url('./img/clarinet-medium.jpg');
+		url('./img/iain-cridland-i_R5LrvExBU-unsplash.jpg');
 	height: 100vh;
 	width: 100%;
 	position: relative;
@@ -117,6 +128,8 @@ Landing Page
 	overflow: hidden;
 }
 .heading-1 {
+	text-transform: uppercase;
+	font-weight: 600;
 	font-size: 3rem;
 }
 .heading-paragraph {
@@ -165,6 +178,9 @@ Featured Items
 	background: var(--clr-background-item-box);
 }
 
+.featured-items h2 {
+	margin: 8px 5px;
+}
 .card-img-top {
 	width: 100%;
 	height: 40vh;
@@ -193,6 +209,7 @@ footer .btn {
 	vertical-align: middle;
 	border: 1px solid transparent;
 	padding: 0.375rem 1.75rem;
+	margin: 0 1rem;
 	line-height: 1.5;
 	background-color: var(--clr-secondary-pink);
 	border-color: var(--clr-secondary-pink);
@@ -201,7 +218,7 @@ footer .btn {
 	min-width: 6rem;
 	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 1;
+	letter-spacing: 1px;
 	font-size: 1rem;
 }
 
@@ -221,6 +238,12 @@ footer .btn {
 	fill: var(--clr-primary-blue);
 	background-color: var(--clr-secondary-pink);
 	border-radius: 50%;
+}
+
+.form-control {
+	display: inline-block;
+	width: 57%;
+	max-width: 25rem;
 }
 
 /************
