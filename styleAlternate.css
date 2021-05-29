@@ -1,0 +1,167 @@
+:root {
+	--font-color-main: #1d1d1f;
+	--clr-secondary-pink: #efc2b3;
+	--clr-background-white: #f0efed;
+	--clr-background-orange: #ff8d6b;
+	--clr-white: #fff;
+	--clr-button: #efc2b3;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--ff-primary: prompt, sans-serif;
+	--inner-container: 10rem;
+
+	/* not in use  */
+	/* --yellow: #f5b335;
+  --green: #5a7f71;
+  --teal: #5a7f71;
+  --cyan: #5a7f71;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #5a7f71;
+  --info: #5a7f71;
+  --warning: #f5b335;
+  --danger: #ff8d6b;
+  --light: #efc2b3;
+  --dark: #1a2456; 
+   --ff-accent: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4 p {
+	margin: 0;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: 300;
+	font-size: 1rem;
+	color: var(--font-color-main);
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 1;
+	/* margin-bottom: 1em; */
+}
+
+/******
+Nav Bar
+******/
+.navbar {
+	font-size: 0.7rem;
+	background-color: var(--font-color-main);
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: var(--clr-secondary-pink);
+	letter-spacing: 2px;
+}
+
+.navbar-light .navbar-toggler {
+	background: var(--clr-secondary-pink);
+	background-color: transparent;
+}
+
+/* .menu-btn {
+	background-color: transparent;
+} */
+
+/***********
+Landing Page
+***********/
+.landing-page {
+	/* background: linear-gradient(
+			to top,
+			rgba(26, 36, 86, 0.45),
+			rgba(26, 36, 86, 0.85)
+		) */
+	background: linear-gradient(
+			to top,
+			rgba(37, 37, 37, 0.664),
+			rgba(0, 0, 0, 0.932)
+		),
+		url('./img/clarinet-medium.jpg');
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.heading-1 {
+	font-size: 3rem;
+}
+.heading-paragraph {
+	/* font-size: 1.333rem; */
+	width: 100%;
+	max-width: 32em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.landing-text {
+	color: var(--clr-secondary-pink);
+	margin-top: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/***********
+Welcome Page
+***********/
+.welcome {
+	height: 30rem;
+	color: var(--clr-white);
+	background-color: var(--clr-secondary-pink);
+}
+.welcome p {
+	color: var(--font-color-main);
+}
+/* .welcome-text {
+	display: flex;
+	flex-direction: column;
+} */
+
+/************
+Media Queries
+************/
+
+@media (min-width: 576px) {
+	.heading-1 {
+		font-size: 4rem;
+	}
+	.heading-paragraph {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.heading-1 {
+		font-size: 5rem;
+	}
+} ;

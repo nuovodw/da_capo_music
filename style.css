@@ -1,0 +1,243 @@
+:root {
+	--clr-primary-blue: #1a2456;
+	--clr-secondary-pink: #efc2b3;
+	--clr-background-white: #f0efed;
+	--clr-background-orange: #ff8d6b;
+	--clr-background-item-box: linear-gradient(
+		48deg,
+		rgba(196, 196, 196, 1) 0%,
+		rgba(217, 217, 217, 1) 63%
+	);
+
+	--clr-white: #fff;
+	--clr-button: #efc2b3;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--ff-primary: prompt, sans-serif;
+	--inner-container: 10rem;
+
+	/* not in use  */
+	/* --yellow: #f5b335;
+  --green: #5a7f71;
+  --teal: #5a7f71;
+  --cyan: #5a7f71;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #5a7f71;
+  --info: #5a7f71;
+  --warning: #f5b335;
+  --danger: #ff8d6b;
+  --light: #efc2b3;
+  --dark: #1a2456; 
+   --ff-accent: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4 p {
+	margin: 0;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: 300;
+	font-size: 1rem;
+	color: var(--clr-primary-blue);
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 1;
+	/* margin-bottom: 1em; */
+}
+
+/******
+Nav Bar
+******/
+.navbar {
+	font-size: 0.7rem;
+	background-color: var(--clr-primary-blue);
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: var(--clr-secondary-pink);
+	letter-spacing: 2px;
+}
+
+.navbar-light .navbar-toggler {
+	background: var(--clr-secondary-pink);
+	background-color: transparent;
+}
+
+/* .menu-btn {
+	background-color: transparent;
+} */
+
+/***********
+Landing Page
+***********/
+.landing-page {
+	/* background: linear-gradient(
+			to top,
+			rgba(26, 36, 86, 0.45),
+			rgba(26, 36, 86, 0.85)
+		) */
+	background: linear-gradient(
+			to right,
+			rgba(218, 218, 218, 0.712),
+			rgba(221, 221, 221, 0.952)
+		),
+		url('./img/clarinet-medium.jpg');
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.heading-1 {
+	font-size: 3rem;
+}
+.heading-paragraph {
+	/* font-size: 1.333rem; */
+	width: 100%;
+	max-width: 32em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.landing-text {
+	color: var(--clr-primary-blue);
+	margin-top: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/***********
+Welcome Page
+***********/
+.welcome {
+	height: 30rem;
+	color: var(--clr-white);
+	background: var(--clr-background-white);
+}
+.welcome p {
+	color: var(--clr-primary-blue);
+}
+/* .welcome-text {
+	display: flex;
+	flex-direction: column;
+} */
+
+/************
+Featured Items
+************/
+.featured-items {
+	background: var(--clr-background-white);
+}
+
+.featured-items .card {
+	background: var(--clr-background-item-box);
+}
+
+.card-img-top {
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+
+/************
+Footer
+************/
+footer {
+	background: var(--clr-primary-blue);
+	color: var(--clr-secondary-pink);
+}
+
+a {
+	color: var(--clr-secondary-pink);
+}
+
+footer .btn {
+	display: inline-block;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	padding: 0.375rem 1.75rem;
+	line-height: 1.5;
+	background-color: var(--clr-secondary-pink);
+	border-color: var(--clr-secondary-pink);
+}
+.footer h4 {
+	min-width: 6rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1;
+	font-size: 1rem;
+}
+
+.footer p {
+	font-size: 0.8rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.footer .footer-icon {
+	display: inline-flex;
+	align-items: center;
+	width: 2em;
+	height: 2em;
+	padding: 0.5em;
+	text-align: center;
+	fill: var(--clr-primary-blue);
+	background-color: var(--clr-secondary-pink);
+	border-radius: 50%;
+}
+
+/************
+Media Queries
+************/
+
+@media (min-width: 576px) {
+	.heading-1 {
+		font-size: 3.8rem;
+	}
+	.heading-paragraph {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.heading-1 {
+		font-size: 5rem;
+	}
+} ;
