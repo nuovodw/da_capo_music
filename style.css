@@ -69,13 +69,72 @@ h6 {
 	line-height: 1;
 	/* margin-bottom: 1em; */
 }
+/******
+Header
+******/
+header {
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	background-color: var(--clr-primary-blue);
+	background-image: linear-gradient(
+			to top,
+			rgba(26, 36, 86, 0.45),
+			rgba(26, 36, 86, 0.85)
+		),
+		url('img/clarinet-medium.jpg');
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header h1 {
+	font-style: italic;
+	text-transform: capitalize;
+	font-weight: 600;
+	font-size: 3rem;
+}
+.header a {
+	text-decoration: none;
+}
+.header p {
+	text-transform: capitalize;
+	font-size: 0.75rem;
+	line-height: 1.6;
+	letter-spacing: 2px;
+	padding-top: 1.5rem;
+}
+
+.heading-paragraph {
+	/* font-size: 1.333rem; */
+	width: 100%;
+	max-width: 32em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.landing-text {
+	color: var(--clr-primary-blue);
+	margin-top: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 /******
 Nav Bar
 ******/
+button {
+	margin: 0 auto;
+}
+
 .navbar {
 	font-size: 0.7rem;
-	background-color: var(--clr-primary-blue);
+	/* background-color: var(--clr-primary-blue); */
 	text-transform: uppercase;
 }
 
@@ -90,6 +149,10 @@ Nav Bar
 	border-color: var(--clr-secondary-pink);
 }
 
+.nav-item {
+	margin: 0 auto;
+}
+
 /* .menu-btn {
 	background-color: transparent;
 } */
@@ -98,6 +161,14 @@ Nav Bar
 Landing Page
 ***********/
 .landing-page {
+	overflow: hidden;
+	background: var(--clr-background-item-box);
+	height: 70vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 	/* background: linear-gradient(
 			to top,
 			rgba(26, 36, 86, 0.45),
@@ -113,7 +184,7 @@ Landing Page
 			rgba(239, 194, 179, 0.966),
 			rgba(26, 36, 86, 0.205)
 		), */
-	background: linear-gradient(
+	/* background: linear-gradient(
 			164deg,
 			rgba(239, 194, 179, 1) 0%,
 			rgba(26, 36, 86, 0.05926120448179273) 95%
@@ -125,7 +196,7 @@ Landing Page
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow: hidden;
+	overflow: hidden; */
 }
 .heading-1 {
 	text-transform: uppercase;
