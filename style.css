@@ -99,7 +99,8 @@ header {
 	text-decoration: none;
 }
 .header p {
-	text-transform: capitalize;
+	text-transform: uppercase;
+	font-weight: 600;
 	font-size: 0.75rem;
 	line-height: 1.6;
 	letter-spacing: 2px;
