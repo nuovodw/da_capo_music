@@ -194,6 +194,21 @@ Featured Items
 }
 
 /************
+Featured Items
+************/
+.new-listings {
+	background: var(--clr-background-white);
+}
+
+.new-listings .card {
+	background: var(--clr-background-item-box);
+}
+
+.new-listings h2 {
+	margin: 8px 5px;
+}
+
+/************
 Categories
 ************/
 .categories {
