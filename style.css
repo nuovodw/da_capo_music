@@ -90,7 +90,6 @@ header {
 }
 
 .header h1 {
-	font-style: italic;
 	text-transform: capitalize;
 	font-weight: 600;
 	font-size: 3rem;
@@ -257,6 +256,31 @@ Featured Items
 	width: 100%;
 	height: 40vh;
 	object-fit: contain;
+}
+
+/************
+Categories
+************/
+.categories {
+	background: var(--clr-background-white);
+}
+
+.categories .card {
+	background: var(--clr-background-item-box);
+}
+
+.card-body {
+	background-color: var(--clr-background-white);
+}
+
+.img-container {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.img-container category-img {
+	margin: 0 auto;
 }
 
 /************
