@@ -35,6 +35,9 @@
   --dark: #1a2456; 
    --ff-accent: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;*/
 }
+html {
+	scroll-behavior: smooth;
+}
 
 *,
 *::before,
