@@ -72,6 +72,11 @@ h6 {
 	line-height: 1;
 	/* margin-bottom: 1em; */
 }
+
+a {
+	color: var(--clr-primary-blue);
+}
+
 /******
 Header
 ******/
@@ -98,6 +103,7 @@ header {
 	font-size: 3rem;
 }
 .header a {
+	color: var(--clr-secondary-pink);
 	text-decoration: none;
 }
 .header p {
@@ -244,7 +250,7 @@ footer {
 	color: var(--clr-secondary-pink);
 }
 
-a {
+footer a {
 	color: var(--clr-secondary-pink);
 }
 
