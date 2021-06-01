@@ -46,3 +46,9 @@ section {
 .card {
 	background: var(--clr-background-item-box);
 }
+
+@media (min-width: 768px) {
+	.card-img-top {
+		height: 78vh;
+	}
+}
