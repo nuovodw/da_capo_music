@@ -1,24 +1,19 @@
-/* :root {
-	--clr-primary-blue: #1a2456;
-	--clr-secondary-pink: #efc2b3;
-	--clr-background-white: #f0efed;
-	--clr-background-orange: #ff8d6b;
-	--clr-background-item-box: linear-gradient(
-		48deg,
-		rgba(196, 196, 196, 1) 0%,
-		rgba(217, 217, 217, 1) 63%
-	);
+section {
+	background-color: var(--clr-background-white);
+}
 
-	--clr-white: #fff;
-	--clr-button: #efc2b3;
-	--breakpoint-xs: 0;
-	--breakpoint-sm: 576px;
-	--breakpoint-md: 768px;
-	--breakpoint-lg: 992px;
-	--breakpoint-xl: 1200px;
-	--ff-primary: prompt, sans-serif;
-	--inner-container: 10rem;
-} */
+.card {
+	background: var(--clr-background-item-box);
+}
+
+section .heading {
+	line-height: 1.3;
+}
+
+/************
+3rd Row (Carousel)
+************/
+
 .featured-item1-container {
 	max-width: 750px;
 }
@@ -39,14 +34,23 @@
 	background-color: #000;
 }
 
-section {
-	background-color: var(--clr-background-white);
+/************
+Video
+************/
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 
-.card {
-	background: var(--clr-background-item-box);
-}
-
+/************
+Media Queries
+************/
 @media (min-width: 768px) {
 	.card-img-top {
 		height: 78vh;
