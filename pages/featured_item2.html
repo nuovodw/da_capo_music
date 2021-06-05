@@ -113,7 +113,7 @@
 							<div class="main-box col m-auto">
 								<iframe
 									width="100%"
-									height="315"
+									height="400"
 									src="https://www.youtube.com/embed/4BNGLe5-WhQ"
 									title="YouTube video player"
 									allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -242,6 +242,7 @@
 						</div>
 					</div>
 				</div>
+				<div id="paypal-button-container"></div>
 			</div>
 		</section>
 
@@ -317,5 +318,11 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- <script src="https://www.paypal.com/sdk/js?client-id=test"></script> -->
+		<script src="https://www.paypal.com/sdk/js?client-id=AQ1mmHlLfSTEZc384jARpniwg0E9M86gsBrsD4jJTFeFvtpGEENkRZ4OF22gAdifoPVdt_nrOq3KdCHy"></script>
+		<script>
+			paypal.Buttons().render('#paypal-button-container');
+		</script>
 	</body>
 </html>
