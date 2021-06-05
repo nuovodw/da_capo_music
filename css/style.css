@@ -1,8 +1,17 @@
 :root {
-	--clr-primary-blue: #1a2456;
+	/* --clr-primary-blue: #1a2456;
 	--clr-secondary-pink: #efc2b3;
 	--clr-background-white: #f0efed;
 	--clr-background-orange: #ff8d6b;
+	--clr-background-item-box: linear-gradient(
+		48deg,
+		rgba(196, 196, 196, 1) 0%,
+		rgba(217, 217, 217, 1) 63%
+	); */
+
+	--clr-primary-blue: #000;
+	--clr-secondary-pink: #fff;
+	--clr-background-white: rgb(255, 241, 241);
 	--clr-background-item-box: linear-gradient(
 		48deg,
 		rgba(196, 196, 196, 1) 0%,
@@ -85,11 +94,16 @@ header {
 	padding-bottom: 1rem;
 	background-color: var(--clr-primary-blue);
 	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.45),
+			rgba(27, 27, 27, 0.85)
+		),
+		/* linear-gradient(
 			to top,
 			rgba(26, 36, 86, 0.45),
 			rgba(26, 36, 86, 0.85)
-		),
-		url('../img/clarinet-medium.jpg');
+		),  */
+			url('../img/iain-cridland-i_R5LrvExBU-unsplash.jpg');
 	width: 100%;
 	height: 100%;
 	background-position: center;
