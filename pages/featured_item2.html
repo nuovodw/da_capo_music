@@ -314,7 +314,7 @@
 					onApprove: function (data, actions) {
 						return actions.order.capture().then(function (details) {
 							alert(
-								`Thank you for shopping with us ${details.payer.name.given_name}! You'll be receiving a confirmation email within 24 hours.`,
+								`Thank you for shopping with us, ${details.payer.name.given_name}! You'll be receiving a confirmation email within 24 hours.`,
 							);
 						});
 					},
