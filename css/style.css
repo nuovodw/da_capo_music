@@ -112,9 +112,10 @@ header {
 }
 
 .header h1 {
-	text-transform: capitalize;
+	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 3rem;
+	font-size: 4rem;
+	letter-spacing: -2.5px;
 }
 .header a {
 	color: var(--clr-secondary-pink);
