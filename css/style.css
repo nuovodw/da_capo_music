@@ -22,7 +22,8 @@
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
 	--breakpoint-xl: 1200px;
-	--ff-primary: prompt, sans-serif;
+	--ff-primary: 'Roboto', sans-serif;
+	--ff-accent: 'Playfair Display SC', serif;
 	--inner-container: 10rem;
 
 	/* not in use  */
@@ -109,9 +110,10 @@ header {
 }
 
 .header h1 {
+	/* font-family: var(--ff-accent); */
 	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 4rem;
+	font-weight: 700;
+	font-size: 3rem;
 	letter-spacing: -2.5px;
 }
 .header a {
@@ -119,19 +121,15 @@ header {
 	text-decoration: none;
 }
 .header p {
+	/* font-family: var(--ff-accent); */
 	text-transform: capitalize;
-	color: rgb(230, 230, 230);
+	color: rgb(243, 243, 243);
 	font-weight: 600;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	letter-spacing: 2px;
 	padding-top: 1.5rem;
 }
-
-/* span {
-	font-size: 1.2rem;
-	font-style: italic;
-} */
 
 .heading-paragraph {
 	/* font-size: 1.333rem; */
@@ -160,14 +158,13 @@ button {
 }
 
 .navbar {
-	font-size: 0.85rem;
+	font-size: 0.75rem;
 	/* background-color: var(--clr-primary-blue); */
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 a.nav-link {
 	color: var(--clr-secondary-pink);
-	font-size: ;
 	letter-spacing: 2px;
 }
 
@@ -320,6 +317,17 @@ Media Queries
 	}
 	.heading-paragraph {
 		font-size: 1.5rem;
+	}
+
+	.header h1 {
+		font-size: 5rem;
+	}
+	.header p {
+		font-size: 1.2rem;
+	}
+
+	.navbar {
+		font-size: 0.85rem;
 	}
 
 	.categories h5 {
