@@ -6,12 +6,32 @@ section {
 	background: var(--clr-background-item-box);
 }
 
-section .heading {
-	line-height: 1.3;
+section .heading .main-title {
+	line-height: 1.1;
+}
+
+.featured-item-subtitle {
+	color: var(--clr-font-gray);
+	font-size: 1.2rem;
+	margin-top: 6px;
+}
+
+.heading .our_price {
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+.retail_price {
+	font-size: 1.2rem;
+	color: var(--clr-font-gray);
+	margin-top: 6px;
+	/* margin-bottom: 8px 0; */
+}
+p.retail_price {
+	margin-bottom: 0;
 }
 
 /************
-3rd Row (Carousel)
+Feature Item Images (Carousel)
 ************/
 
 .featured-item1-container {
@@ -35,14 +55,10 @@ section .heading {
 }
 
 /************
-Video
-************/
-
-/************
 Media Queries
 ************/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 	.card-img-top {
 		height: 78vh;
 	}
-}
+} */
