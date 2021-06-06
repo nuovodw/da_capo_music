@@ -119,13 +119,19 @@ header {
 	text-decoration: none;
 }
 .header p {
-	text-transform: uppercase;
+	text-transform: capitalize;
+	color: rgb(230, 230, 230);
 	font-weight: 600;
-	font-size: 0.75rem;
+	font-size: 1.5rem;
 	line-height: 1.6;
 	letter-spacing: 2px;
 	padding-top: 1.5rem;
 }
+
+/* span {
+	font-size: 1.2rem;
+	font-style: italic;
+} */
 
 .heading-paragraph {
 	/* font-size: 1.333rem; */
@@ -154,29 +160,20 @@ button {
 }
 
 .navbar {
-	font-size: 0.7rem;
+	font-size: 0.85rem;
 	/* background-color: var(--clr-primary-blue); */
 	text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .nav-link {
+a.nav-link {
 	color: var(--clr-secondary-pink);
+	font-size: ;
 	letter-spacing: 2px;
-}
-
-.navbar-light .navbar-toggler {
-	/* background: var(--clr-secondary-pink); */
-	/* background-color: transparent; */
-	border-color: var(--clr-secondary-pink);
 }
 
 .nav-item {
 	margin: 0 auto;
 }
-
-/* .menu-btn {
-	background-color: transparent;
-} */
 
 /***********
 Welcome Page

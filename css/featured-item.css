@@ -33,6 +33,8 @@ p.instrument-type {
 }
 
 h4.our_price {
+	font-size: 1.5rem;
+	font-weight: 400;
 	margin-top: 3rem;
 }
 .retail_price {
