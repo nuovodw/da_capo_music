@@ -8,20 +8,35 @@ section {
 
 section .heading .main-title {
 	line-height: 1.1;
-}
-
-.featured-item-subtitle {
-	color: var(--clr-font-gray);
-	font-size: 1.2rem;
-	margin-top: 6px;
-}
-
-.heading .our_price {
-	margin-top: 2rem;
 	margin-bottom: 0;
 }
+
+.py-2 {
+	padding-bottom: 0;
+}
+
+.my-2 {
+	margin-bottom: 0;
+}
+
+h2.heading {
+	line-height: 1.4;
+	letter-spacing: 1.5px;
+}
+
+p.instrument-type {
+	color: var(--clr-font-gray);
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+h4.our_price {
+	margin-top: 3rem;
+}
 .retail_price {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: var(--clr-font-gray);
 	margin-top: 6px;
 	/* margin-bottom: 8px 0; */
@@ -34,7 +49,7 @@ p.retail_price {
 Feature Item Images (Carousel)
 ************/
 
-.featured-item1-container {
+.featured-item-container {
 	max-width: 750px;
 }
 

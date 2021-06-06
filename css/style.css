@@ -16,6 +16,7 @@
 	--clr-font-gray: rgb(110, 110, 110);
 	--clr-white: #fff;
 	--clr-button: #0d6efd;
+	--clr-blue: #0d6efd;
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
@@ -239,6 +240,11 @@ Categories
 	background: var(--clr-background-item-box);
 }
 
+.categories h5 {
+	font-size: 1rem;
+	overflow-wrap: normal;
+}
+
 .card-body {
 	background-color: var(--clr-background-white);
 }
@@ -282,7 +288,7 @@ footer .btn {
 	background-color: var(--clr-button);
 	border-color: var(--clr-button);
 }
-.footer h4 {
+footer h4 {
 	min-width: 6rem;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -290,10 +296,15 @@ footer .btn {
 	font-size: 1rem;
 }
 
-.footer p {
+footer p {
 	font-size: 0.8rem;
 	font-weight: 300;
 	line-height: 1.5;
+}
+
+.copyright {
+	font-size: 0.85rem;
+	margin-top: 3rem;
 }
 
 .form-control {
@@ -312,6 +323,21 @@ Media Queries
 	}
 	.heading-paragraph {
 		font-size: 1.5rem;
+	}
+
+	.categories h5 {
+		font-size: 1.25rem;
+	}
+
+	footer h4 {
+		font-size: 1.5rem;
+	}
+	footer p {
+		font-size: 1rem;
+	}
+
+	.copyright {
+		font-size: 1rem;
 	}
 }
 
