@@ -27,6 +27,13 @@
 			crossorigin="anonymous"
 		></script>
 
+		<!-- Ion Icon  -->
+		<!-- <link
+			href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+			rel="stylesheet"
+		/> -->
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -46,46 +53,65 @@
 			</div>
 
 			<!-- Nav Bar -->
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-					<!-- <a class="navbar-brand" href="#">da capo</a> -->
-					<button
-						class="navbar-toggler navbar-dark btn menu-btn"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse mt-3" id="navbarNav">
-						<ul class="navbar-nav m-auto">
-							<li class="nav-item">
-								<a
-									class="nav-link fw-bold px-3"
-									aria-current="page"
-									href="#featured-items"
-									>featured items</a
-								>
-							</li>
-							<li class="nav-item px-3">
-								<a class="nav-link" href="#new-listings">new listings</a>
-							</li>
-							<li class="nav-item px-3">
-								<a class="nav-link" href="#categories">categories</a>
-							</li>
-							<li class="nav-item px-3">
-								<a class="nav-link" href="#about">about</a>
-							</li>
-							<li class="nav-item px-3">
-								<a class="nav-link" href="#contact">sign up for updates</a>
-							</li>
-						</ul>
+			<div class="container d-flex justify-content-evenly">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<!-- <a class="navbar-brand" href="#">da capo</a> -->
+						<button
+							class="navbar-toggler navbar-dark btn menu-btn"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse mt-3" id="navbarNav">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item">
+									<a
+										class="nav-link fw-bold px-3"
+										aria-current="page"
+										href="#featured-items"
+										>featured items</a
+									>
+								</li>
+								<li class="nav-item px-3">
+									<a class="nav-link" href="#new-listings">new listings</a>
+								</li>
+								<li class="nav-item px-3">
+									<a class="nav-link" href="#categories">categories</a>
+								</li>
+								<li class="nav-item px-3">
+									<a class="nav-link" href="#about">about</a>
+								</li>
+								<li class="nav-item px-3">
+									<a class="nav-link" href="#contact">contact</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item cart px-3">
+									<a class="nav-link" href="./pages/cart.html"
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"
+											/></svg
+										><span> 0 </span></a
+									>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
+				</nav>
+			</div>
+			<!-- =========== End of Navbar =========== -->
 		</header>
 
 		<!-- =========== End of Header =========== -->

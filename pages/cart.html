@@ -92,7 +92,7 @@
 							</ul>
 							<ul class="navbar-nav m-auto">
 								<li class="nav-item cart px-3">
-									<a class="nav-link" href="./cart.html"
+									<a class="nav-link" href="#"
 										><svg
 											xmlns="http://www.w3.org/2000/svg"
 											width="24"
@@ -110,7 +110,6 @@
 					</div>
 				</nav>
 			</div>
-			<!-- =========== End of Navbar =========== -->
 		</header>
 
 		<!-- =========== End of Header =========== -->
@@ -119,10 +118,7 @@
 			<div class="container featured-item-container">
 				<div class="row">
 					<div class="py-1">
-						<h2 class="heading main-title pt-2 mt-4">
-							Backun MOBA <br />
-							Bb/A Barrel - 62.5mm <br />
-						</h2>
+						<h2 class="heading main-title pt-2 mt-4">cart</h2>
 						<p class="instrument-type">For Selmer Recital Bb/A Clarinets</p>
 						<h4 class="our_price">$105 USD</h4>
 
@@ -214,35 +210,9 @@
 								</button>
 							</div>
 						</div>
+					</div>
+				</div>
 
-						<!-- Demo Video -->
-						<div class="col">
-							<div class="main-box col m-auto">
-								<iframe
-									width="100%"
-									height="400"
-									src="https://www.youtube.com/embed/4BNGLe5-WhQ"
-									title="YouTube video player"
-									allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen
-								></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col featured-item-row-desc">
-					<div class="col text-center">
-						<div class="product-description">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Similique aut, fuga delectus fugiat sit doloribus sequi quod.
-								Voluptates laboriosam corrupti quas aut fugit necessitatibus
-								molestiae temporibus labore nam maxime autem libero nemo rem
-								cupiditate, consectetur ipsam! Optio ipsum qui iusto.
-							</p>
-						</div>
-					</div>
-				</div>
 				<div id="paypal-button-container"></div>
 			</div>
 		</section>
@@ -293,36 +263,5 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
-
-		<!-- <script src="https://www.paypal.com/sdk/js?client-id=test"></script> -->
-		<script src="https://www.paypal.com/sdk/js?client-id=AQ1mmHlLfSTEZc384jARpniwg0E9M86gsBrsD4jJTFeFvtpGEENkRZ4OF22gAdifoPVdt_nrOq3KdCHy"></script>
-
-		<script>
-			paypal
-				.Buttons({
-					createOrder: function (data, actions) {
-						return actions.order.create({
-							purchase_units: [
-								{
-									amount: {
-										value: '0.05',
-									},
-								},
-							],
-						});
-					},
-					onApprove: function (data, actions) {
-						return actions.order.capture().then(function (details) {
-							alert(
-								`Thank you for shopping with us, ${details.payer.name.given_name}! You'll be receiving a confirmation email within 24 hours.`,
-							);
-						});
-					},
-					onError: function (err) {
-						console.log(err);
-					},
-				})
-				.render('#paypal-button-container');
-		</script>
 	</body>
 </html>

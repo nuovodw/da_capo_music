@@ -172,6 +172,10 @@ a.nav-link {
 	margin: 0 auto;
 }
 
+svg {
+	fill: white;
+}
+
 /***********
 Welcome Page
 ***********/
