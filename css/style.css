@@ -212,8 +212,13 @@ Featured Items
 	object-fit: contain;
 }
 
+.cart a {
+	background-color: var(--clr-blue);
+	text-decoration: none;
+}
+
 /************
-Featured Items
+New Listings
 ************/
 .new-listings {
 	background: var(--clr-background-white);

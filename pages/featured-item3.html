@@ -120,12 +120,70 @@
 				<div class="row">
 					<div class="py-1">
 						<h2 class="heading main-title pt-2 mt-4">
-							Backun MOBA <br />
-							Bb/A Barrel - 62.5mm <br />
+							Featured Item 3<br />
+							Lorem ipsum dolor sit.<br />
 						</h2>
-						<p class="instrument-type">For Selmer Recital Bb/A Clarinets</p>
-						<h4 class="our_price">$105 USD</h4>
-						<a class="add-cart cart6" href="#">Add to Cart</a>
+						<p class="instrument-type">
+							Lorem ipsum dolor sit amet consectetur.
+						</p>
+						<h4 class="our_price">$1 USD</h4>
+						<form
+							target="_self"
+							action="https://www.paypal.com/cgi-bin/webscr"
+							method="post"
+						>
+							<input type="hidden" name="cmd" value="_s-xclick" />
+							<input
+								type="hidden"
+								name="hosted_button_id"
+								value="6AQYX7WES8PD4"
+							/>
+							<input
+								type="image"
+								src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+								border="0"
+								name="submit"
+								alt="PayPal - The safer, easier way to pay online!"
+							/>
+							<img
+								alt=""
+								border="0"
+								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+								width="1"
+								height="1"
+							/>
+						</form>
+						<form
+							target="_self"
+							action="https://www.paypal.com/cgi-bin/webscr"
+							method="post"
+						>
+							<!-- Identify your business so that you can collect the payments. -->
+							<input
+								type="hidden"
+								name="business"
+								value="cantabile3@hotmail.com"
+							/>
+
+							<!-- Specify a PayPal shopping cart View Cart button. -->
+							<input type="hidden" name="cmd" value="_cart" />
+							<input type="hidden" name="display" value="1" />
+
+							<!-- Display the View Cart button. -->
+							<input
+								type="image"
+								name="submit"
+								src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+								alt="Add to Cart"
+							/>
+							<img
+								alt=""
+								width="1"
+								height="1"
+								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+							/>
+						</form>
+						<!-- <a class="add-cart cart6" href="#">Add to Cart</a> -->
 
 						<!-- <h4 class="our_price">Our price: $105</h4>
 						<p class="retail_price">Retail price: $259</p> -->
@@ -294,36 +352,5 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-
-		<!-- <script src="https://www.paypal.com/sdk/js?client-id=test"></script> -->
-		<script src="https://www.paypal.com/sdk/js?client-id=AQ1mmHlLfSTEZc384jARpniwg0E9M86gsBrsD4jJTFeFvtpGEENkRZ4OF22gAdifoPVdt_nrOq3KdCHy"></script>
-
-		<script>
-			paypal
-				.Buttons({
-					createOrder: function (data, actions) {
-						return actions.order.create({
-							purchase_units: [
-								{
-									amount: {
-										value: '0.05',
-									},
-								},
-							],
-						});
-					},
-					onApprove: function (data, actions) {
-						return actions.order.capture().then(function (details) {
-							alert(
-								`Thank you for shopping with us, ${details.payer.name.given_name}! You'll be receiving a confirmation email within 24 hours.`,
-							);
-						});
-					},
-					onError: function (err) {
-						console.log(err);
-					},
-				})
-				.render('#paypal-button-container');
-		</script>
 	</body>
 </html>

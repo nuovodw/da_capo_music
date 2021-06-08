@@ -115,17 +115,17 @@
 
 		<!-- =========== End of Header =========== -->
 
-		<section class="featured-item" id="featured-item1">
+		<section class="featured-item" id="featured-item2">
 			<div class="container featured-item-container">
 				<div class="row">
 					<div class="py-1">
 						<h2 class="heading main-title pt-2 mt-4">
-							Backun MOBA <br />
-							Bb/A Barrel - 62.5mm <br />
+							Featured Item 2 <br />
+							Lorem ipsum dolor sit. <br />
 						</h2>
-						<p class="instrument-type">For Selmer Recital Bb/A Clarinets</p>
-						<h4 class="our_price">$105 USD</h4>
-						<a class="add-cart cart6" href="#">Add to Cart</a>
+						<p class="instrument-type">Lorem ipsum dolor sit amet.</p>
+						<h4 class="our_price">$49 USD</h4>
+						<a class="add-cart cart1" href="#">Add to Cart</a>
 
 						<!-- <h4 class="our_price">Our price: $105</h4>
 						<p class="retail_price">Retail price: $259</p> -->
@@ -136,6 +136,31 @@
 
 				<div class="row">
 					<div class="col featured-item-row-pics">
+						<!-- !!!!!!!!!!!!!!!!! SAMPLE ITEMS  !!!!!!!!!!!!-->
+						<div class="col row box-4 my-4">
+							<div class="image">
+								<h3>Grey Tshirt</h3>
+								<h3>$15</h3>
+								<a href="#" class="add-cart cart2">Add to cart</a>
+							</div>
+							<div class="image">
+								<h3>Hoodie</h3>
+								<h3>$20</h3>
+								<a href="#" class="add-cart cart3">Add to cart</a>
+							</div>
+							<div class="image">
+								<h3>BlackTshirt</h3>
+								<h3>$10</h3>
+								<a href="#" class="add-cart cart4">Add to cart</a>
+							</div>
+							<div class="image">
+								<h3>Red Hoodie</h3>
+								<h3>$25</h3>
+								<a href="#" class="add-cart cart5">Add to cart</a>
+							</div>
+						</div>
+						<!-- !!!!!!!!!!!!!!!!! eND OF SAMPLE ITEMS  !!!!!!!!!!!!-->
+
 						<!-- Images (Carousel) -->
 						<div class="col row box-4 my-4">
 							<div
@@ -294,36 +319,5 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-
-		<!-- <script src="https://www.paypal.com/sdk/js?client-id=test"></script> -->
-		<script src="https://www.paypal.com/sdk/js?client-id=AQ1mmHlLfSTEZc384jARpniwg0E9M86gsBrsD4jJTFeFvtpGEENkRZ4OF22gAdifoPVdt_nrOq3KdCHy"></script>
-
-		<script>
-			paypal
-				.Buttons({
-					createOrder: function (data, actions) {
-						return actions.order.create({
-							purchase_units: [
-								{
-									amount: {
-										value: '0.05',
-									},
-								},
-							],
-						});
-					},
-					onApprove: function (data, actions) {
-						return actions.order.capture().then(function (details) {
-							alert(
-								`Thank you for shopping with us, ${details.payer.name.given_name}! You'll be receiving a confirmation email within 24 hours.`,
-							);
-						});
-					},
-					onError: function (err) {
-						console.log(err);
-					},
-				})
-				.render('#paypal-button-container');
-		</script>
 	</body>
 </html>
