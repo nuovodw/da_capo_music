@@ -93,18 +93,37 @@
 							</ul>
 							<ul class="navbar-nav m-auto">
 								<li class="nav-item cart px-3">
-									<a class="nav-link" href="./pages/cart.html"
-										><svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="24"
-											height="24"
-											viewBox="0 0 24 24"
-										>
-											<path
-												d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"
-											/></svg
-										><span> 0 </span></a
+									<form
+										target="_self"
+										action="https://www.paypal.com/cgi-bin/webscr"
+										method="post"
 									>
+										<!-- Identify your business so that you can collect the payments. -->
+										<input
+											type="hidden"
+											name="business"
+											value="cantabile3@hotmail.com"
+										/>
+
+										<!-- Specify a PayPal shopping cart View Cart button. -->
+										<input type="hidden" name="cmd" value="_cart" />
+										<input type="hidden" name="display" value="1" />
+
+										<!-- Display the View Cart button. -->
+										<input
+											type="image"
+											name="submit"
+											class="cart-icon"
+											src="../img/shopping-bag-24.ico"
+											alt="Add to Cart"
+										/>
+										<img
+											alt=""
+											width="1"
+											height="1"
+											src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+										/>
+									</form>
 								</li>
 							</ul>
 						</div>
