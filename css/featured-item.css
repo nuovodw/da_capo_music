@@ -75,7 +75,9 @@ Feature Item Images (Carousel)
 Product Description
 *******************/
 p.product-description {
-	color: var(--clr-primary-blue);
+	color: var(--clr-font-gray);
+	font-size: 1.1rem;
+	letter-spacing: 1px;
 	font-weight: 500;
 }
 

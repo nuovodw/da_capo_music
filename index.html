@@ -36,9 +36,9 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
-	<body>
-		<!-- =========== Header =========== -->
+	<!-- =========== Header =========== -->
 
+	<body>
 		<header class="header">
 			<div
 				class="container d-flex flex-wrap justify-content-center text-center"
@@ -53,7 +53,7 @@
 			</div>
 
 			<!-- Nav Bar -->
-			<div class="container d-flex justify-content-evenly">
+			<div class="container d-flex justify-content-between">
 				<nav class="navbar navbar-expand-lg">
 					<div class="container-fluid">
 						<!-- <a class="navbar-brand" href="#">da capo</a> -->
@@ -91,49 +91,52 @@
 									<a class="nav-link" href="#contact">contact</a>
 								</li>
 							</ul>
-							<ul class="navbar-nav m-auto">
-								<li class="nav-item cart px-3">
-									<form
-										target="_self"
-										action="https://www.paypal.com/cgi-bin/webscr"
-										method="post"
-									>
-										<!-- Identify your business so that you can collect the payments. -->
-										<input
-											type="hidden"
-											name="business"
-											value="cantabile3@hotmail.com"
-										/>
-
-										<!-- Specify a PayPal shopping cart View Cart button. -->
-										<input type="hidden" name="cmd" value="_cart" />
-										<input type="hidden" name="display" value="1" />
-
-										<!-- Display the View Cart button. -->
-										<input
-											type="image"
-											name="submit"
-											class="cart-icon"
-											src="../img/shopping-bag-24.ico"
-											alt="Add to Cart"
-										/>
-										<img
-											alt=""
-											width="1"
-											height="1"
-											src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-										/>
-									</form>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</nav>
+				<!-- Shopping bag icon -->
+				<div class="me-0 pb-4">
+					<li class="cart px-3">
+						<form
+							target="_self"
+							action="https://www.paypal.com/cgi-bin/webscr"
+							method="post"
+						>
+							<!-- Identify your business so that you can collect the payments. -->
+							<input
+								type="hidden"
+								name="business"
+								value="cantabile3@hotmail.com"
+							/>
+
+							<!-- Specify a PayPal shopping cart View Cart button. -->
+							<input type="hidden" name="cmd" value="_cart" />
+							<input type="hidden" name="display" value="1" />
+
+							<!-- Display the View Cart button. -->
+							<input
+								type="image"
+								name="submit"
+								class="cart-icon"
+								src="../img/shopping-bag-24.ico"
+								alt="Add to Cart"
+							/>
+							<img
+								alt=""
+								width="1"
+								height="1"
+								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+							/>
+						</form>
+					</li>
+				</div>
+				<!-- Shopping bag icon -->
 			</div>
 			<!-- =========== End of Navbar =========== -->
 		</header>
 
 		<!-- =========== End of Header =========== -->
+
 		<!-- =========== Featured Items =========== -->
 
 		<section class="featured-items" id="featured-items">
@@ -149,7 +152,7 @@
 						<a href="./pages/featured_item1.html" class="text-decoration-none">
 							<div class="card m-1 border-0 rounded-0">
 								<img
-									src="./img/Backun_Vocalise_Back_800x-removebg-preview.png"
+									src="./img/Backun_Vocalise_Back_800x-removebg-preview_adobespark.png"
 									class="card-img-top"
 									alt="..."
 								/>
@@ -172,8 +175,8 @@
 									alt="..."
 								/>
 								<div class="card-body">
-									<h5 class="card-title">Vandoren M13</h5>
-									<p class="card-text">Great for orchestral playing.</p>
+									<h5 class="card-title">Backun MOBA Barrel 62.5mm</h5>
+									<p class="card-text">For Selmer Recital Bb/A Clarinet</p>
 									<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
 								</div>
 							</div></a
@@ -190,7 +193,7 @@
 									alt="..."
 								/>
 								<div class="card-body">
-									<h5 class="card-title">Vandoren M13</h5>
+									<h5 class="card-title">Vandoren M13Lyre Bb Mouthpiece</h5>
 									<p class="card-text">Great for orchestral playing.</p>
 									<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
 								</div>
