@@ -71,6 +71,14 @@ Feature Item Images (Carousel)
 	background-color: #000;
 }
 
+/*******************
+Product Description
+*******************/
+p.product-description {
+	color: var(--clr-primary-blue);
+	font-weight: 500;
+}
+
 /************
 Media Queries
 ************/
