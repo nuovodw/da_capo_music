@@ -17,6 +17,7 @@
 	--clr-white: #fff;
 	--clr-button: #0d6efd;
 	--clr-blue: #0d6efd;
+	--clr-black-hover: rgb(83, 83, 83);
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
@@ -84,6 +85,10 @@ a {
 	color: var(--clr-primary-blue);
 }
 
+.item-card:hover {
+	color: var(--clr-black-hover);
+}
+
 /******
 Header
 ******/
@@ -110,7 +115,6 @@ header {
 }
 
 .header h1 {
-	/* font-family: var(--ff-accent); */
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 3rem;
@@ -121,13 +125,12 @@ header {
 	text-decoration: none;
 }
 .header p {
-	/* font-family: var(--ff-accent); */
 	text-transform: capitalize;
 	color: rgb(243, 243, 243);
 	font-weight: 600;
 	font-size: 1rem;
 	line-height: 1.6;
-	letter-spacing: 2px;
+	letter-spacing: 0.011em;
 	padding-top: 1.5rem;
 }
 
@@ -153,13 +156,9 @@ header {
 /******
 Nav Bar
 ******/
-/* button {
-	margin: 0 auto;
-} */
 
 .navbar {
 	font-size: 0.8rem;
-	/* background-color: var(--clr-primary-blue); */
 	text-transform: capitalize;
 }
 
@@ -171,10 +170,12 @@ Nav Bar
 	margin-top: 4px;
 }
 
+.nav-link:hover {
+	color: rgb(255, 208, 208);
+}
 a.nav-link {
 	color: var(--clr-secondary-pink);
 	letter-spacing: 2px;
-	/* margin-right: 2rem; */
 }
 
 /* .shopping-bag-container {
@@ -354,7 +355,7 @@ Media Queries
 		font-size: 5rem;
 	}
 	.header p {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 	}
 
 	.navbar {
