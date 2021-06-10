@@ -159,7 +159,7 @@ Nav Bar
 
 .navbar {
 	font-size: 0.8rem;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 .navbar-nav .shopping-bag-container {
