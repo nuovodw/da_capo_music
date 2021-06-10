@@ -48,54 +48,90 @@
 			</div>
 
 			<!-- Nav Bar -->
-			<div class="container d-flex justify-content-between">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container-fluid">
-						<!-- <a class="navbar-brand" href="#">da capo</a> -->
-						<button
-							class="navbar-toggler navbar-dark btn menu-btn"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarNav"
-							aria-controls="navbarNav"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse mt-3" id="navbarNav">
-							<ul class="navbar-nav m-auto">
-								<li class="nav-item">
-									<a
-										class="nav-link fw-bold px-3"
-										aria-current="page"
-										href="#featured-items"
-										>featured items</a
-									>
-								</li>
-								<li class="nav-item px-3">
-									<a class="nav-link" href="../index.html#new-listings"
-										>new listings</a
-									>
-								</li>
-								<li class="nav-item px-3">
-									<a class="nav-link" href="../index.html#categories"
-										>categories</a
-									>
-								</li>
-								<li class="nav-item px-3">
-									<a class="nav-link" href="#about">about</a>
-								</li>
-								<li class="nav-item px-3">
-									<a class="nav-link" href="../index.html#contact">contact</a>
-								</li>
-							</ul>
+			<div class="container d-flex justify-content-center">
+				<div class="col col-left">
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<!-- <a class="navbar-brand" href="#">da capo</a> -->
+							<button
+								class="navbar-toggler navbar-dark btn menu-btn"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNav"
+								aria-controls="navbarNav"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse mt-3" id="navbarNav">
+								<ul class="navbar-nav m-auto fw-bold">
+									<li class="nav-item">
+										<a
+											class="nav-link px-3"
+											aria-current="page"
+											href="../index.html#featured-items"
+											>featured items</a
+										>
+									</li>
+									<li class="nav-item px-3">
+										<a class="nav-link" href="../index.html#new-listings"
+											>new listings</a
+										>
+									</li>
+									<li class="nav-item px-3">
+										<a class="nav-link" href="../index.html#categories"
+											>categories</a
+										>
+									</li>
+									<li class="nav-item px-3">
+										<a class="nav-link" href="../index.html#about">about</a>
+									</li>
+									<li class="nav-item px-3">
+										<a class="nav-link" href="../index.html#contact">contact</a>
+									</li>
+									<!-- Shopping Bag in Nav -->
+									<li class="nav-item px-3 shopping-bag-container">
+										<!-- <a class="nav-link" href="#contact">contact</a> -->
+										<form
+											target="_self"
+											action="https://www.paypal.com/cgi-bin/webscr"
+											method="post"
+										>
+											<!-- Identify your business so that you can collect the payments. -->
+											<input
+												type="hidden"
+												name="business"
+												value="cantabile3@hotmail.com"
+											/>
+											<!-- Specify a PayPal shopping cart View Cart button. -->
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="display" value="1" />
+											<!-- Display the View Cart button. -->
+											<input
+												type="image"
+												name="submit"
+												class="cart-icon"
+												src="../img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
+												alt="Add to Cart"
+											/>
+											<img
+												alt=""
+												width="1"
+												height="1"
+												src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+											/>
+										</form>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</nav>
-				<!-- Shopping bag icon -->
-				<div class="shopping-bag-container">
-					<div class="container-fluid bag-icon-container">
+					</nav>
+				</div>
+
+				<!-- Navbar Right Column  -->
+				<div class="col col-right sm-view-cart-container">
+					<div class="container sm-view-cart d-flex justify-content-end">
 						<form
 							target="_self"
 							action="https://www.paypal.com/cgi-bin/webscr"
@@ -107,18 +143,15 @@
 								name="business"
 								value="cantabile3@hotmail.com"
 							/>
-
 							<!-- Specify a PayPal shopping cart View Cart button. -->
 							<input type="hidden" name="cmd" value="_cart" />
 							<input type="hidden" name="display" value="1" />
-
 							<!-- Display the View Cart button. -->
-
 							<input
 								type="image"
 								name="submit"
 								class="cart-icon"
-								src="../img/outline_shopping_bag_white_36dp.png"
+								src="../img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
 								alt="Add to Cart"
 							/>
 							<img
@@ -130,12 +163,12 @@
 						</form>
 					</div>
 				</div>
-				<!-- Shopping bag icon -->
 			</div>
-			<!-- =========== End of Navbar =========== -->
+			<!-- End of Nav Bar -->
 		</header>
-
 		<!-- =========== End of Header =========== -->
+
+		<!-- =========== Featured Items =========== -->
 
 		<section class="featured-item" id="featured-item1">
 			<div class="container featured-item-container">
@@ -266,7 +299,7 @@
 
 						<!-- Demo Video -->
 						<div class="col">
-							<div class="main-box col my-lg-5">
+							<div class="main-box col mt-lg-5">
 								<iframe
 									width="100%"
 									height="400"
@@ -284,7 +317,7 @@
 				<!-- Product Description -->
 				<div class="col featured-item-row-desc">
 					<div class="col text-center">
-						<div class="my-3 px-4">
+						<div class="container product-description-container mb-lg-5">
 							<p class="product-description">
 								The most open facing in the lineup, the H is both smooth and
 								dark, with ample cushion for those who need more robust

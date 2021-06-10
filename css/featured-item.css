@@ -55,6 +55,10 @@ Feature Item Images (Carousel)
 	max-width: 750px;
 }
 
+.card-img-top {
+	height: 45vh;
+}
+
 .carousel-control-prev-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -74,18 +78,37 @@ Feature Item Images (Carousel)
 /*******************
 Product Description
 *******************/
+.product-description-container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 p.product-description {
 	color: var(--clr-font-gray);
-	font-size: 1.1rem;
-	letter-spacing: 1px;
-	font-weight: 500;
+	font-size: 19px;
+	line-height: 1.2;
+	letter-spacing: 0.012em;
+	font-weight: 600;
+	margin-bottom: 0;
 }
 
 /************
 Media Queries
 ************/
-/* @media (min-width: 768px) {
-	.card-img-top {
-		height: 78vh;
+@media (min-width: 768px) {
+	/* .card-img-top {
+		height: 70vh;
+	} */
+
+	/* .product-description-container {
+		margin-top: 36px;
+		margin-bottom: 36px;
+	} */
+	p.product-description {
+		color: var(--clr-font-gray);
+		font-size: 19px;
+		line-height: 1.2;
+		letter-spacing: 0.012em;
+		font-weight: 600;
+		margin-bottom: 0;
 	}
-} */
+}
