@@ -79,17 +79,18 @@ Feature Item Images (Carousel)
 Product Description
 *******************/
 .product-description-container {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	background-color: var(--clr-background-item-box);
+	margin: 30px auto;
 }
 
 p.product-description {
 	color: var(--clr-font-gray);
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 1.5294717647;
 	letter-spacing: -0.021em;
 	font-weight: 400;
-	margin-bottom: 0;
+	padding: 30px 5px;
+	/* min-width: 260px; */
 }
 /************
 Media Queries
