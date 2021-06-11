@@ -81,6 +81,7 @@ Product Description
 .product-description-container {
 	background-color: var(--clr-background-item-box);
 	margin: 30px auto;
+	min-width: 300px;
 }
 
 p.product-description {
