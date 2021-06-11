@@ -91,6 +91,14 @@ p.product-description {
 	font-weight: 400;
 	padding: 30px 5px;
 }
+
+/************
+About Me
+************/
+.about-me {
+	background-color: var(--clr-background-item-box);
+}
+
 /************
 Media Queries
 ************/
