@@ -23,8 +23,9 @@ Navbar ▶ About
 }
 
 a.dropdown-item {
-	font-size: 0.77rem;
+	font-size: 0.8rem;
 	font-weight: 700;
+	letter-spacing: 2px;
 	color: var(--clr-primary-blue);
 }
 .dropdown-item:active {
