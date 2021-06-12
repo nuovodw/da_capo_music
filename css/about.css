@@ -24,6 +24,7 @@ Navbar ▶ About
 
 a.dropdown-item {
 	font-size: 0.77rem;
+	font-weight: 700;
 	color: var(--clr-primary-blue);
 }
 .dropdown-item:active {
