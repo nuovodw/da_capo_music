@@ -33,19 +33,43 @@ a.dropdown-item {
 	text-decoration: none;
 }
 /************
-About Me
+About Body
 ************/
+.about-me h1 {
+	letter-spacing: -0.021em;
+	padding-bottom: 10px;
+}
+
+.about-me p {
+	color: var(--clr-font-gray);
+	font-size: 1rem;
+	line-height: 1.5294717647;
+	letter-spacing: -0.021em;
+	font-weight: 400;
+}
 
 .about-me {
 	/* background-color: var(--clr-background-item-box); */
 	max-width: 750px;
 }
 
+/* .about-container {
+	background-color: var(--clr-background-item-box);
+} */
+
 /************
 Media Queries
 ************/
 
 @media (min-width: 992px) {
+	.about-me h1 {
+		font-size: 3rem;
+	}
+
+	.about-me p {
+		font-size: 1.2rem;
+	}
+
 	.dropdown-menu {
 		padding-top: 21px;
 	}
