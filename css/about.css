@@ -2,12 +2,28 @@
 Navbar ▶ About
 ************/
 
+.nav-link:focus,
+.nav-link:hover {
+	color: white;
+}
+
 .dropdown a {
 	color: var(--clr-white);
-	text-transform: capitalize;
+	text-transform: uppercase;
+}
+
+.dropdown-menu {
+	margin-top: 0;
+	border-radius: 0;
+}
+
+.dropdown-menu-dark {
+	background-color: rgba(52, 58, 64, 0.01);
+	border: none;
 }
 
 a.dropdown-item {
+	font-size: 0.77rem;
 	color: var(--clr-primary-blue);
 }
 .dropdown-item:active {
