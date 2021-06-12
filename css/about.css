@@ -1,0 +1,24 @@
+/************
+Navbar ▶ About
+************/
+
+.dropdown a {
+	color: var(--clr-white);
+	text-transform: capitalize;
+}
+
+a.dropdown-item {
+	color: var(--clr-primary-blue);
+}
+.dropdown-item:active {
+	color: var(--clr-secondary-pink);
+	text-decoration: none;
+}
+/************
+About Me
+************/
+
+.about-me {
+	/* background-color: var(--clr-background-item-box); */
+	max-width: 750px;
+}
