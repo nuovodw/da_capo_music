@@ -4,7 +4,7 @@ Navbar ▶ About
 
 .nav-link:focus,
 .nav-link:hover {
-	color: white;
+	color: var(--clr-white);
 }
 
 .dropdown a {
@@ -39,4 +39,21 @@ About Me
 .about-me {
 	/* background-color: var(--clr-background-item-box); */
 	max-width: 750px;
+}
+
+/************
+Media Queries
+************/
+
+@media (min-width: 992px) {
+	.dropdown-menu {
+		padding-top: 21px;
+	}
+	.dropdown-menu-dark {
+		background-color: rgba(58, 60, 64, 0.7);
+		border: none;
+	}
+	.dropdown-menu-dark .dropdown-item {
+		color: var(--clr-white);
+	}
 }
