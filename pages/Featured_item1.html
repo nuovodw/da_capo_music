@@ -29,6 +29,7 @@
 
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/featured-item.css" />
+		<link rel="stylesheet" href="../css/about.css" />
 	</head>
 
 	<!-- =========== Header =========== -->
@@ -84,9 +85,46 @@
 											>categories</a
 										>
 									</li>
-									<li class="nav-item px-3">
-										<a class="nav-link" href="../pages/about.html">about</a>
+									<!-- about nav dropdown -->
+									<li class="nav-item dropdown px-3">
+										<a
+											class="nav-link dropdown-toggle"
+											href="#"
+											id="navbarDropdown"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											About
+										</a>
+										<ul
+											class="dropdown-menu dropdown-menu-dark"
+											aria-labelledby="navbarDropdown"
+										>
+											<li>
+												<a
+													class="dropdown-item"
+													href="../pages/about.html#about"
+													>About Da Capo Music</a
+												>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													href="../pages/about.html#ordering"
+													>Ordering</a
+												>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													href="../pages/about.html#shipping"
+													>Shipping | Trial | Return</a
+												>
+											</li>
+										</ul>
 									</li>
+									<!-- End of about nav dropdown -->
 									<li class="nav-item px-3">
 										<a class="nav-link" href="../index.html#contact">contact</a>
 									</li>
@@ -315,7 +353,7 @@
 				</div>
 
 				<!-- Product Description -->
-				<div class="col product-description-container text-center my-5">
+				<div class="col product-description-container text-center mb-md-5">
 					<p class="product-description">
 						The most open facing in the lineup, the H is both smooth and dark,
 						with ample cushion for those who need more robust flexibility
