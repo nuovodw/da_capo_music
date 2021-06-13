@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/featured-item.css" />
 		<link rel="stylesheet" href="../css/about.css" />
+		<link rel="stylesheet" href="../css/form.css" />
 	</head>
 
 	<!-- =========== Header =========== -->
@@ -200,32 +201,81 @@
 
 		<!-- =========== About Section =========== -->
 		<div class="container col-12 col-md-9 col-lg-9 about-me">
-			<div class="my-5 about-container" id="about">
-				<!--  -->
-				<!-- Form begins -->
-				<form
-					name="contact"
-					method="POST"
-					data-netlify-recaptcha="true"
-					data-netlify="true"
-				>
-					<p>
-						<label>Your Name: <input type="text" name="name" /></label>
-					</p>
-					<p>
-						<label>Your Email: <input type="email" name="email" /></label>
-					</p>
+			<div>
+				<div class="form-container my-5" id="contact">
+					<h1 class="contact-title text-center">Contact Us</h1>
+					<!-- Form begins -->
+					<form
+						name="contact"
+						method="POST"
+						data-netlify-recaptcha="true"
+						data-netlify="true"
+					>
+						<!-- Name -->
+						<div class="indivual-contact-section mx-3 my-5">
+							<label class="mb-2">Your Name </label>
+							<div class="contact-name">
+								<p>
+									<input
+										class="input-box first-name col-12 col-sm-9"
+										type="text"
+										name="first-name"
+										placeholder="First name"
+									/>
+								</p>
+							</div>
+							<div class="contact-name">
+								<p>
+									<input
+										class="input-box last-name col-12 col-sm-9"
+										type="text"
+										name="last-name"
+										placeholder="Last name"
+									/>
+								</p>
+							</div>
+						</div>
 
-					<p>
-						<label>Message: <textarea name="message"></textarea></label>
-					</p>
-					<div data-netlify-recaptcha="true"></div>
-					<p>
-						<button type="submit">Send</button>
-					</p>
-				</form>
-				<!-- End of form -->
-				<!--  -->
+						<!-- Email -->
+						<div class="indivual-contact-section mx-3">
+							<label class="mb-2">Your Email</label>
+							<div class="contact-email">
+								<p>
+									<input
+										class="input-box email col-12 col-sm-9"
+										type="email"
+										name="email"
+										placeholder="example@email.com"
+									/>
+								</p>
+							</div>
+						</div>
+
+						<!-- Message -->
+						<div class="indivual-contact-section mx-3">
+							<label class="mb-2">Message</label>
+							<div class="contact-message">
+								<p>
+									<textarea
+										class="message-input-box message col-12"
+										type="text"
+										name="message"
+										placeholder="Please enter your message."
+									></textarea>
+								</p>
+							</div>
+						</div>
+
+						<div data-netlify-recaptcha="true"></div>
+						<p>
+							<button type="submit" class="contact-button btn btn-dark">
+								Submit
+							</button>
+						</p>
+					</form>
+					<!-- End of form -->
+					<!--  -->
+				</div>
 			</div>
 		</div>
 
