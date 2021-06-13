@@ -179,6 +179,10 @@ a.nav-link {
 	letter-spacing: 2px;
 }
 
+.btn:hover {
+	color: transparent;
+}
+
 /* .shopping-bag-container {
 	position: relative;
 	display: flex;
