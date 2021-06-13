@@ -202,36 +202,27 @@
 		<div class="container col-12 col-md-9 col-lg-9 about-me">
 			<div class="my-5 about-container" id="about">
 				<!--  -->
-				<!-- Form bengins -->
-				<form name="contact" method="POST" data-netlify="true">
-					<div class="fields">
-						<div class="field half">
-							<input type="text" name="name" id="name" placeholder="Name" />
-						</div>
-						<div class="field half">
-							<input type="email" name="email" id="email" placeholder="Email" />
-						</div>
-						<div class="field">
-							<textarea
-								name="message"
-								id="message"
-								placeholder="Message"
-								rows="7"
-							></textarea>
-						</div>
-						<div class="field">
-							<div data-netlify-recapcaha="true"></div>
-						</div>
-					</div>
-					<ul class="actions">
-						<li>
-							<input
-								type="submit"
-								value="Send Message"
-								class="button primary"
-							/>
-						</li>
-					</ul>
+				<!-- Form begins -->
+				<form
+					name="contact"
+					method="POST"
+					data-netlify-recaptcha="true"
+					data-netlify="true"
+				>
+					<p>
+						<label>Your Name: <input type="text" name="name" /></label>
+					</p>
+					<p>
+						<label>Your Email: <input type="email" name="email" /></label>
+					</p>
+
+					<p>
+						<label>Message: <textarea name="message"></textarea></label>
+					</p>
+					<div data-netlify-recaptcha="true"></div>
+					<p>
+						<button type="submit">Send</button>
+					</p>
 				</form>
 				<!-- End of form -->
 				<!--  -->
