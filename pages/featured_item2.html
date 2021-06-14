@@ -132,32 +132,30 @@
 									<li class="nav-item px-3 shopping-bag-container">
 										<!-- <a class="nav-link" href="#contact">contact</a> -->
 										<form
-											target="_self"
+											target="paypal"
 											action="https://www.paypal.com/cgi-bin/webscr"
 											method="post"
 										>
-											<!-- Identify your business so that you can collect the payments. -->
+											<input type="hidden" name="cmd" value="_s-xclick" />
 											<input
 												type="hidden"
-												name="business"
-												value="cantabile3@hotmail.com"
+												name="encrypted"
+												value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYBh8pRnZkuq8W1Xw8NfnpCTRFjSHGB2TPG236oA58EF8+qFJZN24OPHq6tR/cQuNqorObi7w3UoIQ06aHyWK/UkLVX6fmjeDPEN8h3s7vRC8v687SR+hYHvA5AVWmb4Djy4taqmYXJF1SSVjT/FCCHmC8aTy0mjoCXJatpZyMTQ6DELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAgqWC96GnkKj4AwI9R0yI6sXNsn0+xMInFQmlCKfxQXBmfyMijlmD0cwt35XRqal6NmA9+FCuVQR7kqoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjEwNjE0MTIyNDQ1WjAjBgkqhkiG9w0BCQQxFgQUJ1oFsmgpkAd6GiD8wq/Hln6zGFEwDQYJKoZIhvcNAQEBBQAEgYCL5JAkkQz4Q9bfdID5kb9Oz8f0h+l8ztfAyAyZaJk5Uk4lFAUWWKWYY1QxcjJ1SqnOPhTxdvoeECNyYIWRFz9HDnJg/7+R7q0EP87PyAm2pn+fcwdGW92+8PGB88jmrUYUBa/LMOcE5zehnBcvSYhqAuYyTz/4tHenkrr4/QCr9Q==-----END PKCS7-----"
 											/>
-											<!-- Specify a PayPal shopping cart View Cart button. -->
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="display" value="1" />
-											<!-- Display the View Cart button. -->
 											<input
 												type="image"
-												name="submit"
 												class="cart-icon"
 												src="../img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
-												alt="Add to Cart"
+												border="0"
+												name="submit"
+												alt="PayPal - The safer, easier way to pay online!"
 											/>
 											<img
 												alt=""
+												border="0"
+												src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
 												width="1"
 												height="1"
-												src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
 											/>
 										</form>
 									</li>
@@ -171,32 +169,30 @@
 				<div class="col col-right sm-view-cart-container">
 					<div class="container sm-view-cart d-flex justify-content-end">
 						<form
-							target="_self"
+							target="paypal"
 							action="https://www.paypal.com/cgi-bin/webscr"
 							method="post"
 						>
-							<!-- Identify your business so that you can collect the payments. -->
+							<input type="hidden" name="cmd" value="_s-xclick" />
 							<input
 								type="hidden"
-								name="business"
-								value="cantabile3@hotmail.com"
+								name="encrypted"
+								value="-----BEGIN PKCS7-----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-----END PKCS7-----"
 							/>
-							<!-- Specify a PayPal shopping cart View Cart button. -->
-							<input type="hidden" name="cmd" value="_cart" />
-							<input type="hidden" name="display" value="1" />
-							<!-- Display the View Cart button. -->
 							<input
 								type="image"
-								name="submit"
 								class="cart-icon"
 								src="../img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
-								alt="Add to Cart"
+								border="0"
+								name="submit"
+								alt="PayPal - The safer, easier way to pay online!"
 							/>
 							<img
 								alt=""
+								border="0"
+								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
 								width="1"
 								height="1"
-								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
 							/>
 						</form>
 					</div>
@@ -213,15 +209,15 @@
 				<div class="row">
 					<div class="py-1">
 						<h2 class="heading main-title pt-2 mt-4">
-							Featured Item 2<br />
-							Bb Mouthpiece - H Model <br />
+							Backun MOBA barrel - 64.5mm<br />
+							for Selmer Paris Clarinets<br />
 						</h2>
 						<!-- <p class="instrument-type">For Selmer Recital Bb/A Clarinets</p> -->
 						<h4 class="our_price">$1 USD</h4>
 
 						<!-- Add to Cart -->
 						<form
-							target="_self"
+							target="paypal"
 							action="https://www.paypal.com/cgi-bin/webscr"
 							method="post"
 						>
@@ -229,7 +225,7 @@
 							<input
 								type="hidden"
 								name="hosted_button_id"
-								value="2VEW89WLRF8GS"
+								value="T4UD2MFGLF3BY"
 							/>
 							<input
 								type="image"
@@ -246,6 +242,7 @@
 								height="1"
 							/>
 						</form>
+
 						<!-- End of Add to Cart -->
 					</div>
 				</div>
@@ -355,11 +352,13 @@
 				<!-- Product Description -->
 				<div class="col product-description-container text-center">
 					<p class="product-description">
-						The most open facing in the lineup, the H is both smooth and dark,
-						with ample cushion for those who need more robust flexibility
-						throughout the registers. This mouthpiece gives as much as it takes,
-						requiring balanced breath support and unyielding passion in
-						performance.
+						The MoBa Barrel produces an unmistakable, full-bodied, dark sound
+						that makes it a favourite amongst orchestral players worldwide. With
+						increased resistance and focus, and an unbelievable ease of
+						articulation throughout the entire range of the clarinet, this
+						barrel is a great option for artists wanting a darker tone. Artists
+						prefer this barrel for orchestral repertoire, whether playing in the
+						section or as a featured soloist.
 					</p>
 				</div>
 			</div>

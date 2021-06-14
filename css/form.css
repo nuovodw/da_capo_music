@@ -4,8 +4,8 @@ label {
 }
 
 .contact-title {
-	margin-bottom: 3rem;
-	padding-top: 4rem;
+	/* margin-bottom: 1rem; */
+	padding-top: 2rem;
 }
 
 .form-container {
@@ -14,11 +14,11 @@ label {
 
 .input-box {
 	height: 3rem;
-	border: 1px rgb(165, 165, 165) solid;
+	border: 2px rgb(212, 212, 212) solid;
 }
 .message-input-box {
 	height: 14rem;
-	border: 1px rgb(165, 165, 165) solid;
+	border: 2px rgb(212, 212, 212) solid;
 }
 
 button.contact-button {
