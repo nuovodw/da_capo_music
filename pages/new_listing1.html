@@ -31,25 +31,26 @@
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="./img/apple-touch-icon.png"
+			href="../img/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./img/favicon-32x32.png"
+			href="../img/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="./img/favicon-16x16.png"
+			href="../img/favicon-16x16.png"
 		/>
-		<link rel="manifest" href="./img/site.webmanifest" />
+		<link rel="manifest" href="../img/site.webmanifest" />
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/about.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/featured-item.css" />
+		<link rel="stylesheet" href="../css/about.css" />
 	</head>
 
 	<!-- =========== Header =========== -->
@@ -59,7 +60,7 @@
 			<div
 				class="container d-flex flex-wrap justify-content-center text-center"
 			>
-				<a href="index.html">
+				<a href="../index.html">
 					<h1>Da Capo Music</h1>
 					<p>
 						Pre-owned professional instruments, <br />
@@ -91,15 +92,19 @@
 										<a
 											class="nav-link px-3"
 											aria-current="page"
-											href="#featured-items"
+											href="../index.html#featured-items"
 											>featured items</a
 										>
 									</li>
 									<li class="nav-item px-3">
-										<a class="nav-link" href="#new-listings">new listings</a>
+										<a class="nav-link" href="../index.html#new-listings"
+											>new listings</a
+										>
 									</li>
 									<li class="nav-item px-3">
-										<a class="nav-link" href="#categories">categories</a>
+										<a class="nav-link" href="../index.html#categories"
+											>categories</a
+										>
 									</li>
 									<!-- about nav dropdown -->
 									<li class="nav-item dropdown px-3">
@@ -118,21 +123,23 @@
 											aria-labelledby="navbarDropdown"
 										>
 											<li>
-												<a class="dropdown-item" href="./pages/about.html#about"
+												<a
+													class="dropdown-item"
+													href="../pages/about.html#about"
 													>About Da Capo Music</a
 												>
 											</li>
 											<li>
 												<a
 													class="dropdown-item"
-													href="./pages/about.html#ordering"
+													href="../pages/about.html#ordering"
 													>Ordering</a
 												>
 											</li>
 											<li>
 												<a
 													class="dropdown-item"
-													href="./pages/about.html#shipping"
+													href="../pages/about.html#shipping"
 													>Shipping | Trial | Return</a
 												>
 											</li>
@@ -140,7 +147,7 @@
 									</li>
 									<!-- End of about nav dropdown -->
 									<li class="nav-item px-3">
-										<a class="nav-link" href="./pages/contact.html">contact</a>
+										<a class="nav-link" href="../pages/contact.html">contact</a>
 									</li>
 									<!-- Shopping Bag in Nav -->
 									<li class="nav-item px-3 shopping-bag-container">
@@ -159,7 +166,7 @@
 											<input
 												type="image"
 												class="cart-icon"
-												src="./img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
+												src="../img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
 												border="0"
 												name="submit"
 												alt="PayPal - The safer, easier way to pay online!"
@@ -196,7 +203,7 @@
 							<input
 								type="image"
 								class="cart-icon"
-								src="./img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
+								src="../img/transparent-shopping-cart-icon-cart-icon-online-marketing-icon-5fd2d6c9a0cfb7.9453548816076530656587.png"
 								border="0"
 								name="submit"
 								alt="PayPal - The safer, easier way to pay online!"
@@ -212,302 +219,170 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- End of Navbar -->
+			<!-- End of Nav Bar -->
 		</header>
 		<!-- =========== End of Header =========== -->
 
-		<!-- =========== Featured Items =========== -->
+		<!-- =========== New Listing 1 =========== -->
 
-		<section class="featured-items" id="featured-items">
-			<div class="container">
+		<section class="featured-item" id="featured-item1">
+			<div class="container featured-item-container">
 				<div class="row">
 					<div class="py-1">
-						<h2 class="heading py-2 my-2">featured items</h2>
-					</div>
-				</div>
-				<div class="row">
-					<!-- featured item 1 -->
-					<div class="col-10 col-sm-8 col-md-4 mt-0 m-auto text-center">
-						<a href="./pages/featured_item1.html" class="text-decoration-none">
-							<div class="card m-1 border-0 rounded-0 item-card">
-								<img
-									src="./img/Backun_Vocalise_Back_800x-removebg-preview_adobespark.png"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Backun Vocalise Bb Mouthpiece</h5>
-									<p class="card-text">H Model</p>
-									<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
-								</div>
-							</div></a
+						<h2 class="heading main-title pt-2 mt-4">
+							Vandoren Leather Ligature & Cap<br />
+							for Bb Mouthpiece
+						</h2>
+						<!-- <p class="instrument-type">For Selmer Recital Bb/A Clarinets</p> -->
+						<h4 class="our_price">$1 USD</h4>
+
+						<!-- Add to Cart -->
+						<form
+							target="paypal"
+							action="https://www.paypal.com/cgi-bin/webscr"
+							method="post"
 						>
-					</div>
-
-					<!-- featured item 2 -->
-					<div class="col-10 col-sm-8 col-md-4 m-auto text-center">
-						<a href="./pages/featured_item2.html" class="text-decoration-none">
-							<div class="card m-1 border-0 rounded-0 item-card">
-								<img
-									src="./img/barrel_adobespark-removebg-preview.png"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Backun MOBA Barrel 62.5mm</h5>
-									<p class="card-text">For Selmer Recital Bb/A Clarinet</p>
-									<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
-								</div>
-							</div></a
-						>
-					</div>
-
-					<!-- featured item 3 -->
-					<div class="col-10 col-sm-8 col-md-4 mt-0 m-auto text-center">
-						<a href="./pages/featured-item3.html" class="text-decoration-none">
-							<div class="card m-1 border-0 rounded-0 item-card">
-								<img
-									src="./img/mouthpiece_adobespark-removebg-preview.png"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Vandoren M13Lyre Bb Mouthpiece</h5>
-									<p class="card-text">13 series | Profile 88</p>
-									<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
-								</div>
-							</div></a
-						>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- =========== End of Featured Items =========== -->
-
-		<!-- =========== New Listings =========== -->
-
-		<section class="new-listings" id="new-listings">
-			<div class="container">
-				<div class="row">
-					<div class="py-1">
-						<h2 class="heading py-2 my-2">new listings</h2>
-					</div>
-				</div>
-				<div class="row">
-					<!-- New Listings Item 1 -->
-					<div class="col-10 col-sm-8 col-md-4 m-auto mt-0 text-center">
-						<a href="./pages/new_listing1.html" class="text-decoration-none">
-							<div class="card m-1 border-0 rounded-0 item-card">
-								<img
-									src="./img/leather-ligature.png"
-									class="card-img-top"
-									alt="leather clarinet ligature"
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Vandoren Leather Ligature & Cap</h5>
-									<p class="card-text">With a Leather Cap</p>
-									<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
-								</div>
-							</div></a
-						>
-					</div>
-
-					<!-- New Listings Item 2 -->
-					<div class="col-10 col-sm-8 col-md-4 m-auto mt-0 text-center">
-						<div class="card m-1 border-0 rounded-0 item-card">
-							<img
-								src="./img/M30 (1).png"
-								class="card-img-top"
-								alt="clarinet mouthpiece M30"
+							<input type="hidden" name="cmd" value="_s-xclick" />
+							<input
+								type="hidden"
+								name="hosted_button_id"
+								value="2VEW89WLRF8GS"
 							/>
-							<div class="card-body">
-								<h5 class="card-title">
-									Vandoren M30 <br />
-									Mouthpiece
-								</h5>
-								<p class="card-text">Superb Intonation</p>
-								<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
-							</div>
-						</div>
-					</div>
-
-					<!-- New Listings Item 3 -->
-					<div class="col-10 col-sm-8 col-md-4 m-auto mt-0 text-center">
-						<div class="card m-1 border-0 rounded-0 item-card">
-							<img
-								src="./img/mouthpiece_adobespark-removebg-preview.png"
-								class="card-img-top"
-								alt="clarinet mouthpiece"
+							<input
+								type="image"
+								src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+								border="0"
+								name="submit"
+								alt="PayPal - The safer, easier way to pay online!"
 							/>
-							<div class="card-body">
-								<h5 class="card-title">Vandoren M13Lyre Bb Mouthpiece</h5>
-								<p class="card-text">13 series | Profile 88</p>
-								<!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
-							</div>
-						</div>
+							<img
+								alt=""
+								border="0"
+								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+								width="1"
+								height="1"
+							/>
+						</form>
+
+						<!-- End of Add to Cart -->
 					</div>
 				</div>
-			</div>
-		</section>
 
-		<!-- =========== Categories =========== -->
+				<!-- Main Box  -->
 
-		<section class="categories" id="categories">
-			<div class="container">
-				<!-- Section Title -->
 				<div class="row">
-					<div class="py-1">
-						<h2 class="heading py-2 my-2">Categories</h2>
+					<div class="col featured-item-row-pics">
+						<!-- Images (Carousel) -->
+						<div class="col row box-4 my-5">
+							<div
+								id="carouselExampleCaptions"
+								class="carousel slide col m-auto"
+								data-bs-touch="true"
+								data-bs-interval="false"
+							>
+								<div class="carousel-indicators">
+									<button
+										type="button"
+										data-bs-target="#carouselExampleCaptions"
+										data-bs-slide-to="0"
+										class="active"
+										aria-current="true"
+										aria-label="Slide 1"
+									></button>
+									<button
+										type="button"
+										data-bs-target="#carouselExampleCaptions"
+										data-bs-slide-to="1"
+										aria-label="Slide 2"
+									></button>
+									<button
+										type="button"
+										data-bs-target="#carouselExampleCaptions"
+										data-bs-slide-to="2"
+										aria-label="Slide 3"
+									></button>
+								</div>
+								<div class="carousel-inner">
+									<div class="carousel-item card border-0 rounded-0 active">
+										<img
+											src="../img/leather-ligature.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="carousel-item card border-0 rounded-0">
+										<img
+											src="../img/leather-ligature.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="carousel-item card border-0 rounded-0">
+										<img
+											src="../img/leather-ligature.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+								</div>
+								<button
+									class="carousel-control-prev"
+									type="button"
+									data-bs-target="#carouselExampleCaptions"
+									data-bs-slide="prev"
+								>
+									<span
+										class="carousel-control-prev-icon"
+										aria-hidden="true"
+									></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button
+									class="carousel-control-next"
+									type="button"
+									data-bs-target="#carouselExampleCaptions"
+									data-bs-slide="next"
+								>
+									<span
+										class="carousel-control-next-icon"
+										aria-hidden="true"
+									></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+						<!-- End of Images (Carousel) -->
+
+						<!-- Demo Video -->
+						<!-- <div class="col">
+							<div class="main-box col mt-lg-5">
+								<iframe
+									width="100%"
+									height="400"
+									src="https://www.youtube.com/embed/4BNGLe5-WhQ"
+									title="YouTube video player"
+									allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div> -->
+						<!-- End of Demo Video -->
 					</div>
 				</div>
-				<!-- End of Section Title -->
-				<!-- Category Items -->
-				<div class="row category-items" id="category-items">
-					<!--  Category 1 -->
-					<div
-						class="
-							col-6 col-sm-6 col-lg-4
-							mx-auto
-							my-3
-							category-item
-							mouthpieces
-						"
-						data-item="mouthpieces"
-					>
-						<div class="card border-0 rounded-0 single-item">
-							<div class="img-container">
-								<img
-									src="./img/mouthpiece_adobespark-removebg-preview.png"
-									class="card-img-top store-img"
-									alt="image of clarinet mouthpiece"
-								/>
-							</div>
-							<div class="card-body text-center">
-								<h5 class="card-title">Mouthpieces</h5>
-							</div>
-						</div>
-					</div>
-					<!-- End of Category 1 -->
-					<!--  Category 2 -->
-					<div
-						class="col-6 col-sm-6 col-lg-4 mx-auto my-3 category-item ligatures"
-						data-item="ligatures"
-					>
-						<div class="card border-0 rounded-0 single-item">
-							<div class="img-container">
-								<img
-									src="./img/bonade.png"
-									class="card-img-top store-img"
-									alt="image of clarinet ligature"
-								/>
-							</div>
-							<div class="card-body text-center">
-								<h5 class="card-title">ligatures</h5>
-							</div>
-						</div>
-					</div>
-					<!-- End of Category 2 -->
-					<!--  Category 3 -->
-					<div
-						class="col-6 col-sm-6 col-lg-4 mx-auto my-3 category-item barrels"
-						data-item="barrels"
-					>
-						<div class="card border-0 rounded-0 single-item">
-							<div class="img-container">
-								<img
-									src="./img/Barrel.png"
-									class="card-img-top store-img"
-									alt="image of clarinet barrel"
-								/>
-							</div>
-							<div class="card-body text-center">
-								<h5 class="card-title">Barrels</h5>
-							</div>
-						</div>
-					</div>
-					<!-- End of Category 3 -->
-					<!--  Category 4 -->
-					<div
-						class="
-							col-6 col-sm-6 col-lg-4
-							mx-auto
-							my-3
-							category-item
-							instruments
-						"
-						data-item="instruments"
-					>
-						<div class="card border-0 rounded-0 single-item">
-							<div class="img-container">
-								<img
-									src="./img/clarinet.png"
-									class="card-img-top store-img"
-									alt="image of clarinet"
-								/>
-							</div>
-							<div class="card-body text-center">
-								<h5 class="card-title">instruments</h5>
-							</div>
-						</div>
-					</div>
-					<!-- End of Category 4 -->
-					<!--  Category 5 -->
-					<div
-						class="
-							col-6 col-sm-6 col-lg-4
-							mx-auto
-							my-3
-							category-item
-							accessories
-						"
-						data-item="accessories"
-					>
-						<div class="card border-0 rounded-0 single-item">
-							<div class="img-container">
-								<img
-									src="./img/Reedcase.png"
-									class="card-img-top store-img"
-									alt="image of reed case"
-								/>
-							</div>
-							<div class="card-body text-center">
-								<h5 class="card-title">accessories</h5>
-							</div>
-						</div>
-					</div>
-					<!-- End of Category 5 -->
-					<!--  Category 6 -->
-					<div
-						class="
-							col-6 col-sm-6 col-lg-4
-							mx-auto
-							my-3
-							category-item
-							Miscellaneous
-						"
-						data-item="Miscellaneous"
-					>
-						<div class="card border-0 rounded-0 single-item">
-							<div class="img-container">
-								<img
-									src="./img/metronome.png"
-									class="card-img-top store-img"
-									alt="image of metronome"
-								/>
-							</div>
-							<div class="card-body text-center">
-								<h5 class="card-title">Miscellaneous</h5>
-							</div>
-						</div>
-					</div>
-					<!-- End of Category 6 -->
+
+				<!-- Product Description -->
+				<div class="col product-description-container text-center mb-md-5">
+					<p class="product-description">
+						Genuine leather – handcrafted finish.<br />
+						Quick and symmetrical tightening with a unique double-track screw
+						mechanism.<br />
+						3 interchangeable pressure plates to adjust the sound.<br />
+						Round and warm sound. <br />
+						Leather Cap
+					</p>
 				</div>
-				<!-- End of Category Items -->
 			</div>
 		</section>
-
-		<!-- =========== End of Categories =========== -->
 
 		<!-- =========== Footer =========== -->
 		<footer class="footer" id="contact">
@@ -548,12 +423,15 @@
 			</div>
 		</footer>
 
-		<script src="./scripts/app.js"></script>
-
+		<script src="../scripts/app.js"></script>
+		<script src="../scripts/cart.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- <script src="https://www.paypal.com/sdk/js?client-id=test"></script> -->
+		<script src="https://www.paypal.com/sdk/js?client-id=AQ1mmHlLfSTEZc384jARpniwg0E9M86gsBrsD4jJTFeFvtpGEENkRZ4OF22gAdifoPVdt_nrOq3KdCHy"></script>
 	</body>
 </html>
