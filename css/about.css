@@ -53,6 +53,19 @@ About Body
 	max-width: 750px;
 }
 
+/* About page  */
+.about-me ul li {
+	color: var(--clr-font-gray);
+	font-size: 1rem;
+	line-height: 1.5294717647;
+	letter-spacing: -0.021em;
+	font-weight: 400;
+	list-style-type: square;
+	list-style-position: inside;
+}
+@media (min-width: 992px) {
+}
+
 .about-contact-link {
 	color: var(--clr-font-gray);
 }
@@ -70,7 +83,8 @@ Media Queries
 		font-size: 3rem;
 	}
 
-	.about-me p {
+	.about-me p,
+	.about-me ul li {
 		font-size: 1.2rem;
 	}
 
