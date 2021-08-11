@@ -53,6 +53,10 @@ About Body
 	max-width: 750px;
 }
 
+.about-contact-link {
+	color: var(--clr-font-gray);
+}
+
 /* .about-container {
 	background-color: var(--clr-background-item-box);
 } */
